@@ -49,6 +49,7 @@ public class FlashCardBuilder {
         JLabel questionLabel = new JLabel("Question");
         JLabel answerLabel = new JLabel("Answer");
 
+
         // Add components to mainPanel
         mainPanel.add(questionLabel);
         mainPanel.add(questionScrollPane);
@@ -57,6 +58,10 @@ public class FlashCardBuilder {
         mainPanel.add(nextButton);
 
 
+        // Add to the Frame
+        frame.getContentPane().add(BorderLayout.CENTER, mainPanel);
+        frame.setSize(500, 600);
+        frame.setVisible(true);
 
     }
 
