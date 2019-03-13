@@ -2,6 +2,8 @@ package com.kserocki;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class FlashCardBuilder {
@@ -56,6 +58,24 @@ public class FlashCardBuilder {
         mainPanel.add(answerLabel);
         mainPanel.add(answerScrollPane);
         mainPanel.add(nextButton);
+        nextButton.addActionListener(new NextCardListener());
+
+        // MenuBar
+        JMenuBar menuBar = new JMenuBar();
+        JMenu fileMenu = new JMenu("File");
+        JMenuItem newMenuItem = new JMenuItem("New");
+        JMenuItem saveMenuItem = new JMenuItem("Save");
+
+        fileMenu.add(newMenuItem);
+        fileMenu.add(saveMenuItem);
+
+        menuBar.add(fileMenu);
+        frame.setJMenuBar(menuBar);
+
+
+        // Add eventListeners
+        newMenuItem.addActionListener(new NewMenuItemListener());
+        saveMenuItem.addActionListener(new SaveMenuItemListener());
 
 
         // Add to the Frame
@@ -72,5 +92,29 @@ public class FlashCardBuilder {
                 new FlashCardBuilder();
             }
         });
+    }
+
+    class NextCardListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+    }
+
+    class NewMenuItemListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
+    }
+
+    class SaveMenuItemListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
     }
 }
