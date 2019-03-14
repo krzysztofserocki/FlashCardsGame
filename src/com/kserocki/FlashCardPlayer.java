@@ -5,7 +5,10 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -76,6 +79,21 @@ public class FlashCardPlayer {
         @Override
         public void actionPerformed(ActionEvent e) {
 
+            if( isShowAnswer ) {
+                display.setText(currentCard.getAnswer());
+                showButton.setText("Next card");
+                isShowAnswer = false;
+            } else {
+                // Show the next question
+                if (cardIterator.hasNext()) {
+                    showNextCard();
+                } else {
+                    // No more cards
+                    display.setText("That was last card");
+                    showButton.setEnabled(false);
+                }
+            }
+
         }
     }
 
@@ -91,5 +109,42 @@ public class FlashCardPlayer {
 
     private void loadFile(File selectedFile) {
 
+        cardList = new ArrayList<FlashCard>();
+
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(selectedFile));
+            String line = null;
+
+            while ((line = reader.readLine()) != null) {
+                makeCard(line);
+            }
+
+        } catch (Exception e) {
+            System.out.println("Couldn't read file");
+            e.printStackTrace();
+        }
+
+        // Show the first card
+        cardIterator = cardList.iterator();
+        showNextCard();
+
+    }
+
+    private void showNextCard() {
+
+        currentCard = (FlashCard) cardIterator.next();
+
+        display.setText(currentCard.getQuestion());
+        showButton.setText("Show Answer");
+        isShowAnswer = true;
+    }
+
+    private void makeCard(String lineToParse) {
+
+        String[] result = lineToParse.split("/");
+
+        FlashCard card = new FlashCard(result[0], result[1]);
+        cardList.add(card);
+        System.out.println("Made a card");
     }
 }
