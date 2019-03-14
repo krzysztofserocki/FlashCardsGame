@@ -123,9 +123,6 @@ public class FlashCardBuilder {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            FlashCard card = new FlashCard(question.getText(), answer.getText());
-            cardList.add(card);
-
             // Create a file dialog with file chooser
             JFileChooser fileSave = new JFileChooser();
             fileSave.showSaveDialog(frame);

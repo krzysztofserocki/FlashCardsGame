@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f8ad87-37ef-435e-9454-dd27411e3891" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kserocki/FlashCardPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kserocki/FlashCardPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kserocki/FlashCardBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kserocki/FlashCardBuilder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kserocki/FlashCardBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="52" />
+            <state relative-caret-position="242">
+              <caret line="124" column="52" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kserocki/FlashCardPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="92" column="49" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+            <state relative-caret-position="290">
+              <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +62,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/kserocki/FlashCard.java" />
-        <option value="$PROJECT_DIR$/src/com/kserocki/FlashCardBuilder.java" />
         <option value="$PROJECT_DIR$/src/com/kserocki/FlashCardPlayer.java" />
+        <option value="$PROJECT_DIR$/src/com/kserocki/FlashCardBuilder.java" />
       </list>
     </option>
   </component>
@@ -106,7 +105,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552495465126" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552573668508" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -216,8 +215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kserocki/FlashCardBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="52" />
+        <state relative-caret-position="242">
+          <caret line="124" column="52" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -226,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kserocki/FlashCardPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="92" column="49" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+        <state relative-caret-position="290">
+          <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
